@@ -1,0 +1,6 @@
+.RowFeed {
+    display: flex;
+    flex-direction: row;
+    height: 300px;
+    margin-top: 5px;
+}

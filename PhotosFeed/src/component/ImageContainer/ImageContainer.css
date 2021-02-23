@@ -1,0 +1,10 @@
+.ImageContainer {
+    flex-basis: 33%;
+    height: 100%;
+    margin-right: 5px;
+    border: 1px solid black;
+}
+
+.no-border {
+    border: none;
+}
