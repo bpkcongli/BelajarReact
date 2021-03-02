@@ -38,7 +38,6 @@ class Order extends React.Component {
                 orders: this.state.orders.filter(order => order.id !== id)
             });
         }
-        console.log(id);
     }
 
     updateMenu = (id, val) => {
@@ -49,8 +48,8 @@ class Order extends React.Component {
         return orders;
     }
 
-    changeMenu = (ref, id) => {
-        const val = parseInt(ref.current.querySelector('select').value);
+    changeMenu = (event, id) => {
+        const val = event.target.value;
         this.setState({
             orders: this.updateMenu(id, val)
         });
@@ -63,8 +62,8 @@ class Order extends React.Component {
         return orders;
     }
 
-    changeQty = (ref, id) => {
-        const val = parseInt(ref.current.querySelector('.OrderQty input').value);
+    changeQty = (event, id) => {
+        const val = event.target.value;
         this.setState({
             orders: this.updateQty(id, val)
         });
