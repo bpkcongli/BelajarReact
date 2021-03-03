@@ -1,7 +1,7 @@
-import React from 'react';
+import React, {Component} from 'react';
 import './OrderQty.css';
 
-class OrderQty extends React.Component {
+class OrderQty extends Component {
     render() {
         return (
             <div className="OrderQty">

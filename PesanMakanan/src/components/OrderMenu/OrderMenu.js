@@ -1,9 +1,9 @@
 import Order from 'components/Order/Order';
-import React from 'react';
+import React, {Component} from 'react';
 import Menu from 'Model';
 import './OrderMenu.css';
 
-class OrderMenu extends React.Component {
+class OrderMenu extends Component {
     render() {
         return (
             <div className="OrderMenu">

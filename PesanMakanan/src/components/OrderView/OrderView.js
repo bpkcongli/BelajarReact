@@ -1,8 +1,8 @@
-import React from 'react';
+import React, {Component} from 'react';
 import OrderInput from 'components/OrderInput/OrderInput';
 import './OrderView.css';
 
-class OrderView extends React.Component {
+class OrderView extends Component {
     constructor(props) {
         super(props);
         this.changeMenu = this.props.controllers.changeMenu.bind(this);

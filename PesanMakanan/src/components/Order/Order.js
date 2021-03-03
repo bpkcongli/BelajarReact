@@ -1,4 +1,4 @@
-import React from 'react';
+import React, {Component} from 'react';
 import OrderController from 'components/OrderController/OrderController';
 import OrderView from 'components/OrderView/OrderView';
 import Menu from 'Model';
@@ -12,7 +12,7 @@ const defaultOrder = id => {
     };
 };
 
-class Order extends React.Component {
+class Order extends Component {
     constructor(props) {
         super(props);
         this.state = {
@@ -86,16 +86,16 @@ class Order extends React.Component {
                 <OrderController controllers={
                     {
                         totalPrice: this.state.totalPrice,
-                        addOrder: this.addOrder.bind(this), 
-                        calculateOrder: this.calculateOrder.bind(this)
+                        addOrder: this.addOrder, 
+                        calculateOrder: this.calculateOrder
                     }
                 } />
                 <OrderView controllers={
                     {
                         orders: this.state.orders,
-                        changeMenu: this.changeMenu.bind(this),
-                        changeQty: this.changeQty.bind(this),
-                        deleteOrder: this.deleteOrder.bind(this)
+                        changeMenu: this.changeMenu,
+                        changeQty: this.changeQty,
+                        deleteOrder: this.deleteOrder
                     }
                 } />
             </div>
