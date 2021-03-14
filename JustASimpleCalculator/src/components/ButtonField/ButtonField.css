@@ -1,0 +1,32 @@
+.ButtonField {
+    display: flex;
+    flex-direction: column;
+}
+
+.RowButtonField {
+    display: flex;
+    flex-direction: row;
+    height: 50px;
+    margin-bottom: 5px;
+}
+
+.ButtonField button {
+    background-color: #333;
+    color: white;
+    flex-basis: 25%;
+    font-size: 28px;
+    font-weight: bold;
+    border: 1px solid #333;
+    border-radius: 3px;
+    margin-right: 5px;
+    transition-duration: 0.4s;
+}
+
+.ButtonField button:hover {
+    color: orange;
+}
+
+.ButtonField .special {
+    background-color: #555;
+    border-color: #555;
+}

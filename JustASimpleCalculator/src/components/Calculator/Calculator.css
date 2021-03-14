@@ -1,0 +1,42 @@
+.Calculator {
+    display: flex;
+    flex-direction: row;
+    margin: 0px auto 10px;
+    width: 600px;
+    height: 364px;
+}
+
+.Main {
+    border: 2px solid #999;
+    border-radius: 5px;
+    display: flex;
+    flex-direction: column;
+    flex-basis: 66.67%;
+    padding: 5px 0 0 5px;
+    width: 400px;
+}
+
+.History {
+    border: 2px solid #999;
+    border-radius: 5px;
+    display: flex;
+    flex-basis: 33.33%;
+    flex-direction: column;
+    height: 100%;
+    margin-left: 5px;
+}
+
+.HistoryTitle {
+    border-bottom: 1px solid #999;
+    font-weight: bold;
+    margin: 5px;
+    padding: 0 5px 5px;
+}
+
+.ClearHistory {
+    padding: 5px;
+}
+
+.ClearHistory button {
+    float: right;
+}
