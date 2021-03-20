@@ -1,0 +1,16 @@
+.App {
+    margin: 20px;
+}
+
+.Title, .Credit {
+    text-align: center;
+}
+
+.Title {
+    font-size: 1.5em;
+    margin-bottom: 10px;
+}
+
+.Title span {
+    font-weight: bold;
+}
